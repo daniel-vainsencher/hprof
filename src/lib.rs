@@ -158,7 +158,7 @@ impl Profiler {
             error!("Pending `leave` calls on Profiler::frame");
         }
         *self.current.borrow_mut() = self.root.clone();
-        self.root.reset();
+        //self.root.reset();
         self.root.call();
     }
 
